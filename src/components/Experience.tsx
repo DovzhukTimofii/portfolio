@@ -36,7 +36,7 @@ const ExperienceCard = ({ experience }) => (
 const Experience = () => {
   return (
     <>
-      <motion.div variants={textVariant}>
+      <motion.div variants={textVariant(0)}>
         <p className={styles.sectionSubText}>What i have done so far</p>
         <h2 className={styles.sectionHeadText}>The story of my development in the front-end</h2>
       </motion.div>

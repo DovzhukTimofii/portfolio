@@ -1,12 +1,6 @@
-import {
-  InterfaceTextVariant,
-  interfaceFadeIn,
-  interfaceZoomIn,
-  interfaceSlideIn,
-  interfaceStaggerContainer,
-} from "./interfaceOfMotion";
+import { Variants } from "framer-motion";
 
-export const textVariant = (delay: string | number): InterfaceTextVariant => {
+export const textVariant = (delay: number): Variants => {
   return {
     hidden: {
       y: -50,
@@ -27,9 +21,9 @@ export const textVariant = (delay: string | number): InterfaceTextVariant => {
 export const fadeIn = (
   direction: string,
   type: string | number,
-  delay: string | number,
+  delay: number,
   duration: string | number
-): interfaceFadeIn => {
+): Variants => {
   return {
     hidden: {
       x: direction === "left" ? 100 : direction === "right" ? -100 : 0,
@@ -50,10 +44,7 @@ export const fadeIn = (
   };
 };
 
-export const zoomIn = (
-  delay: string | number,
-  duration: string | number
-): interfaceZoomIn => {
+export const zoomIn = (delay: number, duration: number): Variants => {
   return {
     hidden: {
       scale: 0,
@@ -75,9 +66,9 @@ export const zoomIn = (
 export const slideIn = (
   direction: string | number,
   type: string | number,
-  delay: string | number,
+  delay: number,
   duration: string | number
-): interfaceSlideIn => {
+): Variants => {
   return {
     hidden: {
       x: direction === "left" ? "-100%" : direction === "right" ? "100%" : 0,
@@ -97,9 +88,9 @@ export const slideIn = (
 };
 
 export const staggerContainer = (
-  staggerChildren: unknown,
-  delayChildren: unknown
-): interfaceStaggerContainer => {
+  staggerChildren: number,
+  delayChildren: number
+): Variants => {
   return {
     hidden: {},
     show: {

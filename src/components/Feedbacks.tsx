@@ -31,7 +31,7 @@ const Feedbacks = () => {
   return (
     <div className="mt-12 bg-tertiary rounded-[20px]">
       <div className={`${styles.padding} bg-tertiary rounded-2x1 min-h-[300px]`}>
-        <motion.div variants={textVariant}>
+        <motion.div variants={textVariant(0)}>
           <p className={styles.sectionSubText}>What did I get out of completing these projects</p>
           <h2 className={styles.sectionHeadText}>Skills.</h2>
         </motion.div>
