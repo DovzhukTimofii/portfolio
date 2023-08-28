@@ -1,10 +1,10 @@
 /* eslint-disable react-refresh/only-export-components */
 import { Tilt } from "react-tilt";
 import { motion } from "framer-motion";
-import { github } from "../assets";
-import { SectionWrapper } from "../hoc";
-import { fadeIn,textVariant } from "../utils/motion";
-import { styles } from "../styles";
+import { github } from "../../../assets";
+import { SectionWrapper } from "../../../hoc";
+import { fadeIn,textVariant } from "../../../utils/motion";
+import { styles } from "../../../styles";
 import { projects } from "../constants";
 
 const ProjectCard = ({index, name, description, tags,image,source_code_link}) => {
@@ -50,15 +50,15 @@ const Works = () => {
   return (
     <>
       <motion.div variants={textVariant(0)}>
-        <p className={styles.sectionSubText}>My work</p>
-        <h2 className={styles.sectionHeadText}>Projects.</h2>
+        <p className={styles.sectionSubText}>Моя робота</p>
+        <h2 className={styles.sectionHeadText}>Проекти.</h2>
       </motion.div>
       <div className="w-full flex">
         <motion.p 
           variants={fadeIn("", "", 0.1, 1)}
           className="mt-5 text-secondary text-[17px] max-w-3x1 leading-[30px]"
         >
-          The presented projects provide tangible demonstrations of my skills and expertise by showcasing real-world instances of my work. Each project is succinctly outlined, accompanied by links to its code repository and live demonstrations. This compilation underscores my capacity to address intricate challenges, collaborate with diverse technologies, and adeptly oversee project endeorsav.
+          Представлені проекти наочно демонструють мої навички та досвід, показуючи реальні приклади моєї роботи. Кожен проект коротко описаний, супроводжується посиланнями на репозиторій коду та демонстраціями в реальному часі. Ця добірка підкреслює мою здатність вирішувати складні завдання, співпрацювати з різноманітними технологіями та вміло контролювати виконання проекту.
         </motion.p>
       </div>
       <div className="mt-20 flex flex-wrap gap-2">

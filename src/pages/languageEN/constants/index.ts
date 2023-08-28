@@ -22,7 +22,7 @@ import {
   bosch,
   weatherapp,
   fitnessite,
-} from "../assets";
+} from "../../../assets";
 
 export const navLinks = [
   {

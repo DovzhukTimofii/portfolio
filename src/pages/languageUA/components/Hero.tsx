@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { styles } from '../styles';
+import { styles } from '../../../styles';
 import { ComputersCanvas } from './canvas';
 
 const Hero = () => {
@@ -25,15 +25,15 @@ const Hero = () => {
         </div>
         <motion.div viewport={{once: true}} initial="hidden" whileInView="visible">
           <motion.h1 custom={1} variants={textHeroAnimation}>
-            <h1 className={`${styles.heroHeadText} text-white`}>Hi, i am
+            <h1 className={`${styles.heroHeadText} text-white`}>Привіт, я
               <span className='text-darkgreen'>
-                Timofii
+                Тимофій
               </span>
             </h1>
           </motion.h1>
           <motion.p custom={2} variants={textHeroAnimation}>
             <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-              I develop websites,<br className='sm:block hidden'/> with interactivity and adaptability
+              Я розробляю веб-сайти,<br className='sm:block hidden'/> з інтерактивністю та адаптивністю
             </p>
           </motion.p>
           

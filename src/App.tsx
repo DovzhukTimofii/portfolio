@@ -1,25 +1,27 @@
-import { BrowserRouter } from 'react-router-dom'
-import {About,Contact,Experience,Feedbacks,Hero,Navbar,StarsCanvas,Tech,Works} from './components'
+import { 
+  createBrowserRouter,
+  RouterProvider,
+  Link,
+} from 'react-router-dom'
+import {LenguagePageOfEN} from './pages/languageEN/LenguagePageOfEN';
+import {LenguagePageOfUA} from './pages/languageUA/LenguagePageOfUA'
+
+const router = createBrowserRouter([
+  {
+    path: "/portfolio/",
+    element: <LenguagePageOfEN/>,
+    errorElement: (<Link to={'/portfolio/'}>Home Page</Link>),
+  },
+  {
+    path: "/portfolio/ua",
+    element: <LenguagePageOfUA/>,
+    errorElement: (<Link to={'/portfolio/'}>Home Page</Link>),
+  }
+])
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <div className='relative z-0 bg-primry'>
-        <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'>
-          <Navbar/>
-          <Hero/>
-        </div>
-        <About/>
-        <Experience/>
-        <Tech/>
-        <Works/>
-        <Feedbacks/>
-        <div className='relative z-0'>
-          <Contact/>
-          <StarsCanvas/>
-        </div>
-      </div>
-    </BrowserRouter>
+    <RouterProvider router={router} />
   )
 }
 
