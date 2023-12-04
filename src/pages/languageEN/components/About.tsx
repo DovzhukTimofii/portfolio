@@ -48,7 +48,7 @@ const About = () => {
       >
         <p>
           I'm a front-end developer, I've been programming since I was fifteen
-          years old and already have a lot of technologies like JavaScript,
+          years old and already have a lot of technologies like JavaScript, NextJS,
           ReactJs, TypeScript, HTML/CSS, Sass/Scss, ThreeJS, Tailwind CSS, BEM
           methodology, and many libraries. I don't have an ideal end point, my
           whole life is a constant self-development!

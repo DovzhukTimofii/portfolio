@@ -22,6 +22,7 @@ import {
   bosch,
   weatherapp,
   fitnessite,
+  spotify,
 } from "../../../assets";
 
 export const navLinks = [
@@ -266,6 +267,23 @@ const projects = [
     ],
     image: fitnessite,
     source_code_link: "https://dovzhuktimofii.github.io/Food/",
+  },
+  {
+    name: "Spotify Clone",
+    description:
+      "Клон Спотіфай, з існуючим адаптивним дизайном та можливістю слухати музику.",
+    tags: [
+      {
+        name: "NextJS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Tailwind",
+        color: "blue-text-gradient",
+      },
+    ],
+    image: spotify,
+    source_code_link: "https://spotify-clone-five-rouge.vercel.app/",
   },
 ];
 

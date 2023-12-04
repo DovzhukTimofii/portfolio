@@ -28,6 +28,7 @@ import marvelportal from "./marvel-portal.png";
 import bosch from "./bosch.png";
 import weatherapp from "./weather-app.png";
 import fitnessite from "./fitnes-site.png";
+import spotify from "./spotify.png";
 export {
   logo,
   modeling,
@@ -56,4 +57,5 @@ export {
   bosch,
   weatherapp,
   fitnessite,
+  spotify,
 };
